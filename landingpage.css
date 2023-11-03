@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+#imagelayer{
+    height: 100vh;
+    width: 100%;
+    /*background-color: red;*/
+}
+
+#textlayer{
+    height: 100vh;
+    width: 100%;
+    position: absolute; /* coz text layer will be on the top of image layer */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 255, 255, 0.029); /* transparent */
+}
+
+#workingarea{
+    height: 100vh;
+    width: 80%;
+    max-width: 1920px;
+    background-color: black;
+    margin: 0 auto;
+    position: relative; /*helps to hold the text div at the almost center*/
+
+}
+
+#nav{
+     width: 100%;
+     padding: 10px 15px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+#nav img{
+     height: 25px;
+}
+
+#left , #right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#nav a {
+    color: aliceblue;
+    font-family: "gilroy";
+    font-size: xx-small;
+    text-decoration: none; /* for this underlines will go away from about,items */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+#text{
+    position: absolute;   /*helps to hold the text div at the almost center*/
+    top: 50%;  /*helps to hold the text div at the almost center*/
+    left: 0;
+    transform: translate(0%,-100%);  /* translate(width , height)  it helps to hold the text div at the center height wise*/
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(137, 43, 226, 0); /* transparent */
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tleft{
+    max-width:50%;
+    height: 80px;
+   /* background-color: rgb(255, 0, 115); */
+    
+    
+}
+
+
+
+
+#tleft .elem{
+    height: 13vw;
+    /*background-color: rgb(89, 0, 255); */
+    overflow: hidden; /* this will disappear texts which are outside of the box*/
+}
+
+#tleft .elem h1{
+    font-family:"kajiro";
+    font-size: 12vw;
+    color: aliceblue;
+    font-weight: lighter;
+    text-shadow:rgb(102, 0, 255) 0px  8px; /* 0px for width 8px for height*/
+   
+}
+
+#tleft button{
+    padding: 2vw 2vw;
+    border-radius: 10%;
+    font-family: "kajiro";
+    font-size: 3vw;
+    font-weight: lighter;
+    margin-top: 1vw; /* will create distance between above texts and the button*/
+}
+
+
+#tright{
+    max-width:30%;
+    
+    width: 15%;
+    color: antiquewhite;
+    
+    font-family: "gilroy";
+   /*background-color: rgb(72, 255, 0); */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /*will help to add new line at the end*/
+    
+}
+
+
+#tright p {
+    margin-bottom: 30%;
+    
+    font-size: 10px;
+    text-align: right;
+}
+
+#tright #imagediv{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(102, 0, 255);
+    margin: 10px 0px;
+    /*background-image: url(https://cdn.pixabay.com/photo/2022/12/24/21/12/background-7676470_1280.jpg); */
+    background-position: center;
+    display: flex;
+    
+}
+
+#imagediv img{             /* MOWN */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+
