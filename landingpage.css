@@ -102,18 +102,20 @@ html,body{
     height: 100px;
    /* background-color: rgb(255, 0, 115); */
     margin-bottom: 23%;
-    
-    
 }
 
 #tleft .elem{
+    
     height: 13vw;
     /*background-color: rgb(89, 0, 255); */
-    overflow: hidden; /* this will disappear texts which are outside of the box*/
-   
-}
+     overflow: hidden; /*this will disappear texts which are outside of the box */
+    position: relative;
+} 
 
 #tleft .elem h1{
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
     line-height: 1;
     font-family:"kajiro";
     font-size: 12vw;
@@ -121,6 +123,11 @@ html,body{
     font-weight: 100;
     text-shadow:rgb(102, 0, 255) 0px  8px; /* 0px for width 8px for height*/
    
+}
+
+#tleft .elem h1:nth-child(1) {
+    top : 0; 
+    
 }
 
 #tleft button{
